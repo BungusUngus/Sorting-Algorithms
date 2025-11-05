@@ -133,9 +133,9 @@ namespace MyBinaryTree
                     return current.left;
                 }
 
-                Node successor = GetSuccessor(current);
+                Node successor = GetSucessor(current);
                 current.value = successor.value;
-                current.right = Delete(successor.value, current.right)
+                current.right = Delete(successor.value, current.right);
             }
                 return current;
         }
